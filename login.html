@@ -1,0 +1,58 @@
+<!-- 2357401003 Ahmad Sofiyurrohman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - PiksiStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var errorText = document.getElementById('errorText');
+            if (username == 'admin' && password == 'admin') {
+                alert('Login Berhasil');
+                window.location.href = 'dashboard.html';
+                errorText.style.display = 'none';
+            } else {
+                errorText.style.display = 'block';
+                errorText.textContent = 'Username atau Password salah';
+            }
+        }
+    </script>
+</head>
+<body style="background-color: #f4f4f9;">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="container animated-slide-bottom">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card" style="border-color: #6a1b9a; border-radius: 10px;">
+                        <div class="card-header text-white" style="background-color: #6a1b9a;">Login</div>
+                        <div class="card-body" style="background-color: #e3f2fd;">
+                            <form>
+                                <div id="errorText" style="color: red; display: none; margin-bottom: 10px; text-align: center;"></div>
+                                <div class="form-group">
+                                    <label for="username" style="color: #6a1b9a;">Username<span class="text-danger">*</span></label>
+                                    <input type="username" name="username" id="username" class="form-control" style="border-color: #6a1b9a;" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" style="color: #6a1b9a;">Password<span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="password" name="password" id="password" class="form-control" style="border-color: #6a1b9a;" required>
+                                    </div>
+                                </div>
+                                <a class="btn btn-secondary" type="button" href="index.html" style="background-color: #908696; border-color: #6a1b9a;">Kembali</a>
+                                <button class="btn btn-primary" type="button" onclick="login()" style="background-color: #6a1b9a; border-color: #6a1b9a;">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

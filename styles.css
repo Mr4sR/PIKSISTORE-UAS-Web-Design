@@ -1,0 +1,206 @@
+/* 2357401003 Ahmad Sofiyurrohman */
+
+body {
+    background-color: #f4f3ff;
+}
+
+.sidebar {
+    background-color: #e3f2fd;
+    min-height: 80vh;
+    color: #6a1b9a;
+    border: 3px solid #6a1b9a;
+    border-radius: 10px;
+}
+
+.dashboard {
+    background-color: #e3f2fd;
+    min-height: 80vh;
+    color: #6a1b9a;
+    border: 3px solid #6a1b9a;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #6a1b9a;
+    margin-bottom: 8px;
+}
+.active {
+    margin-left: 25px;
+    background-color: #4a0072;
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-link {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #4a0072;
+    border-radius: 10px;
+    color: white;
+    transform: scale(1.1) rotate(-3deg);
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    color: black;
+    border: 3px solid #6a0dad;
+}
+.card h5 {
+    font-weight: bold;
+}
+.fw-bold strong {
+    color: #6a0dad;
+}
+
+.btn-primary {
+    background-color: #6a1b9a;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #4a0072;
+}
+.table thead {
+    background-color: #6a1b9a;
+    color: white;
+}
+.table tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animated-bounce {
+    animation: bounceIn 0.8s ease-in-out;
+}
+
+
+.animated-rotate {
+    animation: rotateIn 0.8s ease-in-out;
+}
+
+
+.animated-zoom {
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+
+.animated-slide-right {
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+
+.animated-slide-left {
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+
+.animated-slide-bottom {
+    animation: slideInBottom 0.8s ease-in-out;
+}
+
+
+.animated-slide-top {
+    animation: slideInTop 0.8s ease-in-out;
+}
+
+
+.animated-fade {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
